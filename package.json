@@ -1,0 +1,18 @@
+{
+  "name": "@neutron-ui/parallax",
+  "packageManager": "yarn@3.2.4",
+  "type": "module",
+  "workspaces": [
+    "./dev"
+  ],
+  "scripts": {
+    "dev": "yarn ./dev dev"
+  },
+  "dependencies": {
+    "@microsoft/fast-element": "2.0.0-beta.17",
+    "@microsoft/fast-web-utilities": "^6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
