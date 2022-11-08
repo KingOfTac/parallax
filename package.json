@@ -6,7 +6,8 @@
     "./dev"
   ],
   "scripts": {
-    "dev": "yarn ./dev dev"
+    "dev": "yarn ./dev dev",
+    "build": "yarn ./dev build"
   },
   "dependencies": {
     "@microsoft/fast-element": "2.0.0-beta.17",

@@ -30,3 +30,8 @@ body {
   height: 300px;
   background-color: #121212;
 }
+
+h2 {
+  text-align: center;
+  font-size: 48px;
+}
