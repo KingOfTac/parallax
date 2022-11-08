@@ -23,7 +23,6 @@ body {
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
-  padding-inline: 1rem;
 }
 
 .card {

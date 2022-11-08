@@ -39,7 +39,7 @@ export class ParallaxItem extends FASTElement {
 	private configureParallax(elements: Array<ParallaxElement>): void {
 		const vh = window.innerHeight;
 		
-		elements.forEach((element: ParallaxElement) => {
+		elements.forEach((element: ParallaxElement, index: number) => {
 			const model: ParallaxItemModel = {
 				scale: (vh - (element.clientHeight)) * this.speed,
 				calc: (vh - element.clientHeight) * 0.5,
@@ -48,22 +48,24 @@ export class ParallaxItem extends FASTElement {
 
 			element.$parallax = model;
 
-			if (this.noscale) {
-				this.setNoscale(element);
-			}
-
 			const translation = (((0 - model.offset) + model.calc) * this.speed);
 
 			if (this.orientation === Orientation.horizontal) {
 				Object.assign(element.style, {
+					top: index > 1 ? 'unset' : `${element.clientHeight * index}px`,
 					transform: `translate3d(${translation}px, 0, 0)`
 				});
 			}
 
 			if (this.orientation === Orientation.vertical) {
 				Object.assign(element.style, {
+					top: index > 1 ? 'unset' : `${element.clientHeight * index}px`,
 					transform: `translate3d(0, ${translation}px, 0)`
 				});
+			}
+
+			if (this.noscale) {
+				this.setNoscale(element);
 			}
 		});
 	}
