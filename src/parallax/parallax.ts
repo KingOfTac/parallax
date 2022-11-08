@@ -40,6 +40,11 @@ export class ParallaxItem extends FASTElement {
 		const vh = window.innerHeight;
 		
 		elements.forEach((element: ParallaxElement, index: number) => {
+			if (element instanceof ParallaxItem) {
+				return;
+			}
+			
+
 			const model: ParallaxItemModel = {
 				scale: (vh - (element.clientHeight)) * this.speed,
 				calc: (vh - element.clientHeight) * 0.5,
@@ -81,6 +86,10 @@ export class ParallaxItem extends FASTElement {
 		const positionY = window.scrollY;
 
 		this.elements.forEach((element: ParallaxElement) => {
+			if (element instanceof ParallaxItem) {
+				return;
+			}
+			
 			const translation = (((positionY - element.$parallax.offset) + element.$parallax.calc) * this.speed);
 
 			if (this.orientation === Orientation.horizontal) {

@@ -35,3 +35,8 @@ h2 {
   text-align: center;
   font-size: 48px;
 }
+
+.nested {
+  display: flex;
+  align-self: center;
+}
