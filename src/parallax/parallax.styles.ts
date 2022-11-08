@@ -1,16 +1,13 @@
 import { css } from '@microsoft/fast-element';
 
-export const styles = css`
+export const parallaxItemStyles = css`
 	:host {
 		display: block;
-	}
-	
-	.elements {
-		display: block;
 		position: relative;
+		height: 100%;
+		width: 100%;
 		min-height: 20rem;
 		max-height: 30rem;
-		box-sizing: border-box;
 		overflow: hidden;
 	}
 

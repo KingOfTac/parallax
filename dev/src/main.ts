@@ -1,4 +1,4 @@
 import './style.css';
-import { parallaxDefinition } from '../../src/index.js';
+import { parallaxItemDefinition } from '../../src/index.js';
 
-parallaxDefinition.define();
+parallaxItemDefinition.define();
