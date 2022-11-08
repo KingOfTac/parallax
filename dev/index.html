@@ -20,29 +20,41 @@
         --item-max-height: 3rem;
       "
     >
-      <h2>hello</h2>
-      <h2>world</h2>
+      <h2>Parallax</h2>
+      <h2>Text</h2>
     </neutron-parallax>
     <div class="card"></div>
-    <div class="card"></div>
-    <neutron-parallax orientation="vertical" noscale speed="0.75">
+    <neutron-parallax orientation="vertical" noscale speed="0.5">
       <img src="https://placeimg.com/800/800/arch/grayscale">
       <neutron-parallax
         class="nested"
         orientation="vertical"
-        speed="0.35"
+        speed="0.75"
         style="
           --container-min-height: 20rem;
           --container-max-height: 30rem;
-          --item-min-height: 1rem;
-          --item-max-height: 3rem;
+          --item-min-height: 32px;
+          --item-max-height: 48px;
         "
       >
-        <h2>hello</h2>
-        <h2>world</h2>
+        <h2>Parallax Text</h2>
+        <h2>Nested In</h2>
+        <h2>A Parallax Image</h2>
       </neutron-parallax>
     </neutron-parallax>
     <div class="card"></div>
+    <neutron-parallax
+      orientation="horizontal"
+      style="
+        --container-min-height: 32px;
+        --container-max-height: 90px;
+        --item-min-height: 32px;
+        --item-max-height: 48px;
+      "
+    >
+      <h2>Horizontal</h2>
+      <h2>Parallax</h2>
+    </neutron-parallax>
     <div class="card"></div>
     <div class="card"></div>
     <script type="module" src="/src/main.ts"></script>

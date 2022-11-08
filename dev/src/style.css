@@ -40,3 +40,8 @@ h2 {
   display: flex;
   align-self: center;
 }
+
+.nested > h2 {
+  color: white;
+  text-shadow: 4px 4px 8px black;
+}

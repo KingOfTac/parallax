@@ -15,7 +15,7 @@ export const parallaxItemStyles = css`
 		overflow: hidden;
 	}
 
-	::slotted(*) {
+	::slotted(:not(.nested)) {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -25,5 +25,7 @@ export const parallaxItemStyles = css`
 		transition: none;
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
+		will-change: transform;
 	}
 `;
