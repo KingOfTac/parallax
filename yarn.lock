@@ -42,7 +42,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@neutron-ui/parallax@workspace:.":
+"@neutron-ui/parallax@workspace:., @neutron-ui/parallax@workspace:^":
   version: 0.0.0-use.local
   resolution: "@neutron-ui/parallax@workspace:."
   dependencies:
@@ -258,10 +258,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dev@workspace:dev":
+"dev@workspace:site":
   version: 0.0.0-use.local
-  resolution: "dev@workspace:dev"
+  resolution: "dev@workspace:site"
   dependencies:
+    "@microsoft/fast-element": 2.0.0-beta.17
+    "@microsoft/fast-web-utilities": ^6.0.0
+    "@neutron-ui/parallax": "workspace:^"
     typescript: ^4.6.4
     vite: ^3.2.3
   languageName: unknown

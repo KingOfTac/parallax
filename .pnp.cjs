@@ -17,14 +17,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       },\
       {\
         "name": "dev",\
-        "reference": "workspace:dev"\
+        "reference": "workspace:site"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@neutron-ui/parallax", ["workspace:."]],\
-      ["dev", ["workspace:dev"]]\
+      ["@neutron-ui/parallax", ["virtual:7054e2ea81ab177f745c8ec7e563e95c06ef81b8408979effe15e8d3efb617bce060e5e7b3206cc03037a1821ff84edc9b136a4d487ba670a77c963fa8bb6901#workspace:.", "workspace:."]],\
+      ["dev", ["workspace:site"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -87,6 +87,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@neutron-ui/parallax", [\
+        ["virtual:7054e2ea81ab177f745c8ec7e563e95c06ef81b8408979effe15e8d3efb617bce060e5e7b3206cc03037a1821ff84edc9b136a4d487ba670a77c963fa8bb6901#workspace:.", {\
+          "packageLocation": "./.yarn/__virtual__/@neutron-ui-parallax-virtual-6a97d593ac/1/",\
+          "packageDependencies": [\
+            ["@neutron-ui/parallax", "virtual:7054e2ea81ab177f745c8ec7e563e95c06ef81b8408979effe15e8d3efb617bce060e5e7b3206cc03037a1821ff84edc9b136a4d487ba670a77c963fa8bb6901#workspace:."],\
+            ["@microsoft/fast-element", "npm:2.0.0-beta.17"],\
+            ["@microsoft/fast-web-utilities", "npm:6.0.0"],\
+            ["@types/microsoft__fast-element", null],\
+            ["@types/microsoft__fast-web-utilities", null],\
+            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
+          ],\
+          "packagePeers": [\
+            "@microsoft/fast-element",\
+            "@microsoft/fast-web-utilities",\
+            "@types/microsoft__fast-element",\
+            "@types/microsoft__fast-web-utilities"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
@@ -342,12 +360,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["dev", [\
-        ["workspace:dev", {\
-          "packageLocation": "./dev/",\
+        ["workspace:site", {\
+          "packageLocation": "./site/",\
           "packageDependencies": [\
-            ["dev", "workspace:dev"],\
+            ["dev", "workspace:site"],\
+            ["@microsoft/fast-element", "npm:2.0.0-beta.17"],\
+            ["@microsoft/fast-web-utilities", "npm:6.0.0"],\
+            ["@neutron-ui/parallax", "virtual:7054e2ea81ab177f745c8ec7e563e95c06ef81b8408979effe15e8d3efb617bce060e5e7b3206cc03037a1821ff84edc9b136a4d487ba670a77c963fa8bb6901#workspace:."],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
-            ["vite", "virtual:3ab1a8b63aac81a22edd7fb1765f978a6d78f25720b35417e0efe4891b081f916ebc5a379c674a5367681ef2a4f00d49ed8f103445eedeee70c38e6572359bfd#npm:3.2.3"]\
+            ["vite", "virtual:7054e2ea81ab177f745c8ec7e563e95c06ef81b8408979effe15e8d3efb617bce060e5e7b3206cc03037a1821ff84edc9b136a4d487ba670a77c963fa8bb6901#npm:3.2.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1427,10 +1448,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:3ab1a8b63aac81a22edd7fb1765f978a6d78f25720b35417e0efe4891b081f916ebc5a379c674a5367681ef2a4f00d49ed8f103445eedeee70c38e6572359bfd#npm:3.2.3", {\
-          "packageLocation": "./.yarn/__virtual__/vite-virtual-34a0cdd9af/0/cache/vite-npm-3.2.3-34712b84f7-3c7c618f7f.zip/node_modules/vite/",\
+        ["virtual:7054e2ea81ab177f745c8ec7e563e95c06ef81b8408979effe15e8d3efb617bce060e5e7b3206cc03037a1821ff84edc9b136a4d487ba670a77c963fa8bb6901#npm:3.2.3", {\
+          "packageLocation": "./.yarn/__virtual__/vite-virtual-4fa2f4eb22/0/cache/vite-npm-3.2.3-34712b84f7-3c7c618f7f.zip/node_modules/vite/",\
           "packageDependencies": [\
-            ["vite", "virtual:3ab1a8b63aac81a22edd7fb1765f978a6d78f25720b35417e0efe4891b081f916ebc5a379c674a5367681ef2a4f00d49ed8f103445eedeee70c38e6572359bfd#npm:3.2.3"],\
+            ["vite", "virtual:7054e2ea81ab177f745c8ec7e563e95c06ef81b8408979effe15e8d3efb617bce060e5e7b3206cc03037a1821ff84edc9b136a4d487ba670a77c963fa8bb6901#npm:3.2.3"],\
             ["@types/less", null],\
             ["@types/node", null],\
             ["@types/sass", null],\

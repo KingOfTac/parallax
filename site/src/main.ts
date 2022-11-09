@@ -1,4 +1,4 @@
 import './style.css';
-import { parallaxItemDefinition } from '../../src/index.js';
+import { parallaxItemDefinition } from '@neutron-ui/parallax';
 
 parallaxItemDefinition.define();
