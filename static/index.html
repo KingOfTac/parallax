@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script type="module" crossorigin src="/assets/index.9503212f.js"></script>
+    <link rel="stylesheet" href="/assets/index.155ae304.css">
+  </head>
+  <body>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <neutron-parallax
+      orientation="vertical"
+      speed="0.35"
+      noscale
+    >
+      <img src="https://placeimg.com/800/800/arch/grayscale">
+      <neutron-parallax
+        class="nested"
+        orientation="vertical"
+        speed="0.75"
+        style="
+          --container-min-height: 20rem;
+          --container-max-height: 30rem;
+          --item-min-height: 32px;
+          --item-max-height: 48px;
+        "
+      >
+        <h2>Parallax Text</h2>
+      </neutron-parallax>
+    </neutron-parallax>
+    <div class="card"></div>
+    <neutron-parallax orientation="vertical" noscale speed="0.35">
+      <img src="https://placeimg.com/800/800/arch/grayscale">
+      <neutron-parallax
+        class="nested"
+        orientation="vertical"
+        speed="0.75"
+        style="
+          --container-min-height: 20rem;
+          --container-max-height: 30rem;
+          --item-min-height: 32px;
+          --item-max-height: 48px;
+        "
+      >
+        <h2>Parallax Text</h2>
+        <h2>Nested In</h2>
+        <h2>A Parallax Image</h2>
+      </neutron-parallax>
+    </neutron-parallax>
+    <div class="card"></div>
+    <neutron-parallax
+      orientation="horizontal"
+      style="
+        --container-min-height: 48px;
+        --container-max-height: 100px;
+        --item-min-height: 32px;
+        --item-max-height: 48px;
+      "
+    >
+      <h2>Horizontal</h2>
+      <h2>Parallax</h2>
+    </neutron-parallax>
+    <div class="card"></div>
+    <div class="card"></div>
+    
+  </body>
+</html>
