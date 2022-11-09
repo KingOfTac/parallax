@@ -2,15 +2,23 @@
   "name": "@neutron-ui/parallax",
   "version": "1.0.0",
   "packageManager": "yarn@3.2.4",
-  "type": "module",
-  "main": "dist/index.js",
   "workspaces": [
     "./site"
   ],
+  "type": "module",
+  "main": "dist/esm/index.js",
+  "types": "dist/dts/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/dts/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "dev": "yarn ./site dev",
     "build:site": "yarn ./site build",
-    "build": "tsc"
+    "build": "tsc -p ./tsconfig.json"
   },
   "peerDependencies": {
     "@microsoft/fast-element": "2.0.0-beta.17",

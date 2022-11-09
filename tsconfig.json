@@ -12,7 +12,9 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "declaration": true,
+    "declarationDir": "dist/dts",
+    "outDir": "dist/esm",
   },
   "include": ["src"]
 }
