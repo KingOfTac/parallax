@@ -1,0 +1,4 @@
+{
+	"root": "/",
+	"buildCommand": "yarn build:site"
+}
