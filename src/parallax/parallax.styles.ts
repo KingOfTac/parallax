@@ -13,6 +13,7 @@ export const parallaxItemStyles = css`
 		min-height: var(--container-min-height);
 		max-height: var(--container-max-height);
 		overflow: hidden;
+		contain: content;
 	}
 
 	::slotted(:not(.nested)) {

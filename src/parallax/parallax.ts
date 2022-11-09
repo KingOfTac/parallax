@@ -57,14 +57,14 @@ export class ParallaxItem extends FASTElement {
 
 			if (this.orientation === Orientation.horizontal) {
 				Object.assign(element.style, {
-					top: index < 1 ? '10px' : `${(element.clientHeight + 10) * index}px`,
+					top: index < 1 ? 'uset' : `${(element.clientHeight + 10) * index}px`,
 					transform: `translate3d(${translation}px, 0, 0)`
 				});
 			}
 
 			if (this.orientation === Orientation.vertical) {
 				Object.assign(element.style, {
-					top: index < 1 ? '10px' : `${(element.clientHeight + 10) * index}px`,
+					top: index < 1 ? 'unset' : `${(element.clientHeight + 10) * index}px`,
 					transform: `translate3d(0, ${translation}px, 0)`
 				});
 			}
@@ -89,7 +89,7 @@ export class ParallaxItem extends FASTElement {
 			if (element instanceof ParallaxItem) {
 				return;
 			}
-			
+
 			const translation = (((positionY - element.$parallax.offset) + element.$parallax.calc) * this.speed);
 
 			if (this.orientation === Orientation.horizontal) {

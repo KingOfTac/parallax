@@ -3,17 +3,20 @@
   "packageManager": "yarn@3.2.4",
   "type": "module",
   "workspaces": [
-    "./dev"
+    "./site"
   ],
   "scripts": {
-    "dev": "yarn ./dev dev",
-    "build": "yarn ./dev build"
+    "dev": "yarn ./site dev",
+    "build:site": "yarn ./site build",
+    "build": "tsc"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@microsoft/fast-element": "2.0.0-beta.17",
     "@microsoft/fast-web-utilities": "^6.0.0"
   },
   "devDependencies": {
+    "@microsoft/fast-element": "2.0.0-beta.17",
+    "@microsoft/fast-web-utilities": "^6.0.0",
     "typescript": "^4.8.4"
   }
 }

@@ -13,18 +13,25 @@
     <neutron-parallax
       orientation="vertical"
       speed="0.35"
-      style="
-        --container-min-height: 1rem;
-        --container-max-height: 10rem;
-        --item-min-height: 1rem;
-        --item-max-height: 3rem;
-      "
+      noscale
     >
-      <h2>Parallax</h2>
-      <h2>Text</h2>
+      <img src="https://placeimg.com/800/800/arch/grayscale">
+      <neutron-parallax
+        class="nested"
+        orientation="vertical"
+        speed="0.75"
+        style="
+          --container-min-height: 20rem;
+          --container-max-height: 30rem;
+          --item-min-height: 32px;
+          --item-max-height: 48px;
+        "
+      >
+        <h2>Parallax Text</h2>
+      </neutron-parallax>
     </neutron-parallax>
     <div class="card"></div>
-    <neutron-parallax orientation="vertical" noscale speed="0.5">
+    <neutron-parallax orientation="vertical" noscale speed="0.35">
       <img src="https://placeimg.com/800/800/arch/grayscale">
       <neutron-parallax
         class="nested"
@@ -46,8 +53,8 @@
     <neutron-parallax
       orientation="horizontal"
       style="
-        --container-min-height: 32px;
-        --container-max-height: 90px;
+        --container-min-height: 48px;
+        --container-max-height: 100px;
         --item-min-height: 32px;
         --item-max-height: 48px;
       "
